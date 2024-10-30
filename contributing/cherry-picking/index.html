@@ -12,22 +12,26 @@
         <meta name="author" content="OpenStack Team">
       
       
+        <link rel="canonical" href="https://openstack-k8s-operators.github.io/architecture/contributing/cherry-picking/">
+      
+      
+        <link rel="prev" href="../pull-request-testing/">
       
       
       
-      <link rel="icon" href="/architecture/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
-        <title>OpenStack K8S Operators Architectures</title>
+        <title>Getting your PR into a stable branch - OpenStack K8S Operators Architectures</title>
       
     
     
-      <link rel="stylesheet" href="/architecture/assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="/architecture/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("/architecture/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#getting-your-pr-into-a-stable-branch" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -87,9 +96,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/architecture/." title="OpenStack K8S Operators Architectures" class="md-header__button md-logo" aria-label="OpenStack K8S Operators Architectures" data-md-component="logo">
+    <a href="../.." title="OpenStack K8S Operators Architectures" class="md-header__button md-logo" aria-label="OpenStack K8S Operators Architectures" data-md-component="logo">
       
-  <img src="/architecture/images/openstack-logo.png" alt="logo">
+  <img src="../../images/openstack-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -106,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Getting your PR into a stable branch
             
           </span>
         </div>
@@ -226,9 +235,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/architecture/." title="OpenStack K8S Operators Architectures" class="md-nav__button md-logo" aria-label="OpenStack K8S Operators Architectures" data-md-component="logo">
+    <a href="../.." title="OpenStack K8S Operators Architectures" class="md-nav__button md-logo" aria-label="OpenStack K8S Operators Architectures" data-md-component="logo">
       
-  <img src="/architecture/images/openstack-logo.png" alt="logo">
+  <img src="../../images/openstack-logo.png" alt="logo">
 
     </a>
     OpenStack K8S Operators Architectures
@@ -255,7 +264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -478,7 +487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture/faq/cr_by_components/" class="md-nav__link">
+      <a href="../../faq/cr_by_components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -503,17 +512,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -527,7 +538,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Contributing
@@ -541,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture/contributing/documentation/" class="md-nav__link">
+      <a href="../documentation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/architecture/contributing/pull-request-testing/" class="md-nav__link">
+      <a href="../pull-request-testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,10 +591,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/architecture/contributing/cherry-picking/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Getting your PR into a stable branch
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -592,6 +623,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#method-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -621,6 +690,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#method-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method 2
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -632,8 +729,88 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="getting-your-pr-into-a-stable-branch">Getting your PR into a stable branch<a class="headerlink" href="#getting-your-pr-into-a-stable-branch" title="Permanent link">#</a></h1>
+<p>After your PR merges into the main branch you should open a PR to
+cherry pick it into a stable branch if appropriate. For example,
+you may want your patch to be in the
+<a href="https://github.com/openstack-k8s-operators/architecture/tree/18.0.0-proposed">18.0.0-proposed branch</a>.</p>
+<p>If you anticipate that your PR should be cherry picked then please tag
+it accordingly. For example we have a
+<a href="https://github.com/openstack-k8s-operators/architecture/issues?q=label%3Aneeds-18.0.0-proposed-cherry-pick+">needs-18.0.0-proposed-cherry-pick</a>
+tag. If we think a patch should be in a stable branch, then we will
+apply that tag to your PR to remind you to follow up to send in a
+cherry pick.</p>
+<p>Please do not ask <a href="../../OWNERS">core maintainers</a> to cherry pick your
+patch though we will be happy to review it and help merge it once the
+cherry pick PR has been submitted using one of the methods below.</p>
+<h2 id="method-1">Method 1<a class="headerlink" href="#method-1" title="Permanent link">#</a></h2>
+<p>Add a comment like the following to the PR you wish to cherry pick.
+<div class="highlight"><pre><span></span><code>/cherrypick 18.0.0-proposed
+</code></pre></div>
+The <a href="https://github.com/openshift-cherrypick-robot">openshift-cherrypick-robot</a>
+will then attempt to create a new PR of the original PR (after it
+merges) with a cherry-pick of the same patch into the desired branch.
+There are
+<a href="https://github.com/openstack-k8s-operators/architecture/pull/395#issuecomment-2352668300">examples</a>
+of this in previous PRs in this repository.</p>
+<p>If there is a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line">merge conflict</a>,
+then method 1 will not work and you will need to use method 2.</p>
+<h2 id="method-2">Method 2<a class="headerlink" href="#method-2" title="Permanent link">#</a></h2>
+<p>If you can send a PR to this repository then you can create a cherry
+pick using the <code>git</code> command line tools without requiring any
+additional privileges. For example, the following produces a
+cherry-pick within a personal fork of the architecture repository.
+<div class="highlight"><pre><span></span><code>git remote add upstream git@github.com:openstack-k8s-operators/architecture.git 
+git fetch upstream
+git checkout -b 18.0.0-proposed upstream/18.0.0-proposed
+git push origin 18.0.0-proposed
+git log origin/main
+git cherry-pick &lt;commit hash&gt;
+git push origin 18.0.0-proposed
+</code></pre></div>
+You should then be able to use the github web interface to create the
+PR. Please add <code>(cherry picked from &lt;commit hash&gt;)</code> to the bottom of
+your commit message.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    2024-09-16
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -667,10 +844,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/architecture/", "features": ["search.suggest", "search.highlight", "search.share"], "search": "/architecture/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="/architecture/assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
